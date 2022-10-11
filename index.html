@@ -6,7 +6,10 @@
 
     <script>
     function Load(){
-      alert("테스트");
+    console.log(window.location.href);
+    const url = new URL(window.location.href);
+    const urlParams = url.searchParams;
+    console.log(urlParams.get('name'));
     }
   </script>
     <meta charset="UTF-8">
